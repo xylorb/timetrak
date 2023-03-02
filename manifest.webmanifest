@@ -1,0 +1,17 @@
+{
+  "name": "TimeTrak PWA",
+  "short_name": "TTPWA",
+  "description": "Time Tracking Progressive Web App",
+  "scope": "/timetrak/",
+  "start_url": "/timetrak/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "/timetrak/img/icon.png",
+        "type": "image/png",
+        "sizes": "700x700"
+      }
+  ]
+}

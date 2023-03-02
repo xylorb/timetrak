@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeTrak PWA</title>
+  <link rel="canonical" href="https://xylorb.github.io/timetrak/" />
+  <link rel="manifest" href="/timetrak/manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ 
+  <h1>TimeTrak PWA</h1>
+  <p>
+    This is the TimeTrak PWA on GitHub pages. 
+    Make sure to check the README at 
+    <a href="https://github.com/xylorb/timetrak/">https://github.com/xylorb/timetrak/</a>
+  </p>
+
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/timetrak/sw.js',
+          {scope: '/timetrak/'}
+        )
+      }
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
