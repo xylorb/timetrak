@@ -1,13 +1,45 @@
+/**
+ *  sw.js
+ *  2023-03-07
+ *  Service Worker PWA Administration
+ **/ 
+
+
 var GHPATH = '/timetrak';
-var APP_PREFIX = 'ttpwa_';
-var VERSION = 'version_00';
+var APP_PREFIX = 'ttrk_';
+
+
+// The version of the cache. Every time you change any of the files
+// you need to change this version (version_01, version_02…). 
+// If you don't change the version, the service worker will give your
+// users the old files!
+var VERSION = 'version_64';
+
+// The files to make available for offline use. make sure to add 
+// others to this list
 var URLS = [    
   `${GHPATH}/`,
+  `${GHPATH}/sw.js`,
+  `${GHPATH}/manifest.webmanifest`,
   `${GHPATH}/index.html`,
-  `${GHPATH}/css/styles.css`,
-  `${GHPATH}/img/icon.png`,
-  `${GHPATH}/js/app.js`
+  `${GHPATH}/main.js`,
+  `${GHPATH}/style/base_app.css`,
+  `${GHPATH}/style/base_style.css`,
+  `${GHPATH}/style/main_view.css`,
+  `${GHPATH}/assets/icon.png`,
+  `${GHPATH}/app/timetrak/TimeTrakApp.js`,
+  `${GHPATH}/app/timetrak/ttkEvents.js`,
+  `${GHPATH}/app/timetrak/ttkMainView.js`,
+  `${GHPATH}/app/timetrak/ttkModel.js`,
+  `${GHPATH}/app/base/Controller.js`,
+  `${GHPATH}/app/base/Element.js`,
+  `${GHPATH}/app/base/Event.js`,
+  `${GHPATH}/app/base/Model.js`,
+  `${GHPATH}/app/base/View.js`
 ]
+
+
+
 
 var CACHE_NAME = APP_PREFIX + VERSION
 self.addEventListener('fetch', function (e) {

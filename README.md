@@ -1,7 +1,8 @@
 # TimeTrak PWA #
 
-This is going to be a simple Progressive Web Application (PWA) with the purpose of tracking time spent doing 
-a particular task (for example, a work day).
+This is a time tracking PWA (progressive web application) with the purpose of tracking time spent doing a particular task (for example, a work day).
+
+On a personal note, it aslo serves as a general web application template, PWA template, and plain old practice for the author.
 
 ## Resources ##
 
