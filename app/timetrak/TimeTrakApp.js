@@ -5,10 +5,10 @@
  **/
 
 
-import Controller from '../base/Controller'
+import Controller from '../base/Controller.js'
 
-import ttkMainView from './ttkMainView'
-import ttkTimerModel from './ttkTimerModel'
+import ttkMainView from './ttkMainView.js'
+import ttkTimerModel from './ttkTimerModel.js'
 
 
 export class TimeTrakApp extends Controller {

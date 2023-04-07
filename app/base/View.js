@@ -5,7 +5,7 @@
  **/
 
 
-import Element from './Element'
+import Element from './Element.js'
 
 class View extends Element {
   constructor(id, className) {

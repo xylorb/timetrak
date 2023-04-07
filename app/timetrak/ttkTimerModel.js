@@ -5,10 +5,10 @@
  **/
 
 
-import Model from '../base/Model'
-import Event from '../base/Event'
+import Model from '../base/Model.js'
+import Event from '../base/Event.js'
 
-import ttkEvents from './ttkEvents'
+import ttkEvents from './ttkEvents.js'
 
 
 export class ttkTimerModel extends Model {

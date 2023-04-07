@@ -5,7 +5,7 @@
  **/
 
 
-import TimeTrakApp from './app/timetrak/TimeTrakApp'
+import TimeTrakApp from './app/timetrak/TimeTrakApp.js'
 
 
 let app = new TimeTrakApp()

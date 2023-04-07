@@ -5,9 +5,9 @@
  **/
 
 
-import View from '../base/View'
-import Event from '../base/Event'
-import ttkEvents from './ttkEvents'
+import View from '../base/View.js'
+import Event from '../base/Event.js'
+import ttkEvents from './ttkEvents.js'
 
 
 class ttkMainView extends View {
