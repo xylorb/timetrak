@@ -13,14 +13,12 @@ var APP_PREFIX = 'ttrk_';
 // you need to change this version (version_01, version_02…). 
 // If you don't change the version, the service worker will give your
 // users the old files!
-var VERSION = 'version_65';
+var VERSION = 'version_67';
 
 // The files to make available for offline use. make sure to add 
 // others to this list
 var URLS = [    
   `${GHPATH}/`,
-  `${GHPATH}/sw.js`,
-  `${GHPATH}/manifest.webmanifest`,
   `${GHPATH}/index.html`,
   `${GHPATH}/main.js`,
   `${GHPATH}/style/base_app.css`,
