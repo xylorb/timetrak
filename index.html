@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TimeTrak PWA</title>
   <link rel="canonical" href="https://xylorb.github.io/timetrak/" />
-  <link rel="manifest" href="./manifest.webmanifest">
+  <!--<link rel="canonical" href="localhost" />-->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="style/base_style.css">
   <link rel="stylesheet" href="style/base_app.css">
   <link rel="stylesheet" href="style/main_view.css">
@@ -23,11 +24,11 @@
   <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
-          './sw.js',
-          {scope: './'}
+          'sw.js'/*,
+          {scope: '/'}*/
         )
       }
   </script>
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
