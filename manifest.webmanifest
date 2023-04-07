@@ -2,7 +2,7 @@
   "name": "TimeTrak PWA",
   "short_name": "TTPWA",
   "description": "Time Tracking Progressive Web App",
-  "scope": "/timetrak/",
+  "scope": "/",
   "start_url": "/timetrak/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
