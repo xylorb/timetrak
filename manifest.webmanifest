@@ -3,7 +3,7 @@
   "short_name": "TTPWA",
   "description": "Time Tracking Progressive Web App",
   "scope": "/timetrak/",
-  "start_url": "../",
+  "start_url": "./",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "display": "standalone", 
