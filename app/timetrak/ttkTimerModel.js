@@ -44,9 +44,11 @@ export class ttkTimerModel extends Model {
     this.controller.postAppEvent(ae)
   }
   ticksToString() {
-  var hours = String(Math.trunc(this.totalTicks / 3600))
-  var minutes = String(Math.trunc(this.totalTicks / 60))
-  var seconds = String(this.totalTicks % 60)
+    var rawHours = Math.trunc(this.totalTicks / 3600)
+    var minutes = String(Math.trunc(this.totalTicks / 60) - (rawHours * 60))
+
+    var hours = String(rawHours)
+    var seconds = String(this.totalTicks % 60)
   
   return hours.padStart(2, '0') + ":" + minutes.padStart(2, '0') + ":" + seconds.padStart(2, '0')
   }
