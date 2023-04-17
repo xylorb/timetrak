@@ -13,7 +13,7 @@ var APP_PREFIX = 'ttrk_';
 // you need to change this version (version_01, version_02…). 
 // If you don't change the version, the service worker will give your
 // users the old files!
-var VERSION = 'version_103';
+var VERSION = 'version_104';
 
 // The files to make available for offline use. make sure to add 
 // others to this list
@@ -29,6 +29,7 @@ var URLS = [
   `${GHPATH}/app/timetrak/ttkEvents.js`,
   `${GHPATH}/app/timetrak/ttkMainView.js`,
   `${GHPATH}/app/timetrak/ttkModel.js`,
+  `${GHPATH}/app/timetrak/ttkActivityRecord.js`,
   `${GHPATH}/app/base/Controller.js`,
   `${GHPATH}/app/base/Element.js`,
   `${GHPATH}/app/base/Event.js`,

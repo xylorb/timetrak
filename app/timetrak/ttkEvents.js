@@ -6,11 +6,14 @@
 
 
 export const ttkEvents = {
-    TIMER: {
-      START: "timer.start",
-      STOP: "timer.stop",
-      RESET: "timer.reset",
-      TICK: "timer.tick"
+    MAIN_VIEW: {
+      START_TIMER: "main_view.start_timer",
+      STOP_TIMER: "main_view.stop_timer",
+      RESET_TIMER: "main_view.reset_timer"
+    },
+    TIMER_MODEL: {
+      START_TIMER: "timer_model.start_timer",
+      TICK_TIMER: "timer_model.tick_timer"
     }
   }
   
